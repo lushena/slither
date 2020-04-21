@@ -1,0 +1,12 @@
+strict digraph {
+subgraph cluster_44_SafeAdd {
+label = "SafeAdd"
+"44_add" [label="add"]
+"44_add_v2" [label="add_v2"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"require(bool)" 
+"44_add_v2" -> "require(bool)"
+"44_add" -> "require(bool)"
+}
+}
